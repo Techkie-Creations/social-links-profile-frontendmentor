@@ -1,0 +1,131 @@
+/* GLOBALS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* FONT FACE */
+@font-face {
+    font-family: Inter;
+    src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* MAIN */
+
+main.main {
+    text-align: center;
+    padding: 3rem;
+    background-color: hsl(0, 0%, 12%);
+    margin: 7rem auto;
+    width: 30rem;
+}
+
+/* MAIN - AVATAR AND TEXT */
+
+.main .avatar {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.main h1 {
+    margin-bottom: .7rem;
+    font-weight: 700;
+}
+
+.main .location {
+    font-size: calc(100% * 1.1);
+    color: hsl(75, 94%, 57%);
+    margin-bottom: .7rem;
+    font-weight: 700;
+}
+
+.main .hobby {
+    margin: 1.3rem 0;
+    text-align: center;
+}
+
+/* MAIN - LINKS */
+
+.main .links {
+    width: 100%;
+}
+
+.main .links .social {
+    list-style: none;
+    width: 100%;
+    padding: 1rem;
+    margin: .9rem;
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    font-weight: 600;
+}
+
+.main .links .social:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.main, .main .links .social {
+    border-radius: .5rem;
+}
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+}
+
+footer .icon {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	object-position: 0rem 0.01rem;
+	object-fit: cover;
+    margin-bottom: .8rem;
+}
+
+footer .attribution a {
+	text-decoration: none;
+	color: hsl(75, 94%, 57%);
+    font-weight: 700;
+}
+
+footer .attribution a:hover {
+	color: grey;
+}
+
+footer p.copy {
+    margin-top: .7rem;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 3rem;
+    }
+
+    main.main {
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
